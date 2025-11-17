@@ -1,0 +1,23 @@
+<ThingDefs><List>
+
+	<ThingDef Type="Item" Name="Item_YunYuZhiJuan" Parent="MaterialBase">
+		<ThingName>弥天云雨之卷</ThingName>
+		<MaxStack>1</MaxStack>
+		<TexPath>res\Sprs\object\object_shuahua01</TexPath>
+		<Desc>此物与天道交感，在合适的季节可以用此宝物改变天象条件。乃是开天辟地时诞生的诸多先天灵宝之一。</Desc>	
+		<Beauty>25</Beauty>	
+		<Rate>12</Rate>
+		<ElementKind>None</ElementKind>
+		<Flammability>
+			<Flammability>0</Flammability>
+		</Flammability>
+		<Item Lable="Other">	
+			<NotRandom>1</NotRandom>
+			<FabaoSuffix>卷</FabaoSuffix>	
+		</Item>
+		<StoryBnts>
+			<li Name="打开" Desc="打开云雨之卷。" Story="Story_Item_YunYuZhiJuan" Cost="5" Icon="res/Sprs/ui/icon_hand"/>
+		</StoryBnts>
+	</ThingDef>
+	
+</List></ThingDefs>

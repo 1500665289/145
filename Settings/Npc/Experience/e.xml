@@ -1,0 +1,12 @@
+﻿<Experiences><List>
+
+	<Experience Name="Experiences2371">
+		<DisplayName>灵宝认主</DisplayName>
+		<Desc>你鸿运齐天获得了先天灵宝的认可。\n\n\n[size=10]获得弥天云雨之卷[/size]</Desc>
+		<Point>0</Point>
+		<Items>
+			<li Name= "Item_YunYuZhiJuan" Count="1"/>
+		</Items>		
+	</Experience>
+
+</List></Experiences>

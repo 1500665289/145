@@ -1,0 +1,14 @@
+﻿<Stories><List>
+	
+	<Story Name="Secrets_yunyuzhijuan"  Parent="BaseFillingStory">
+		<DisplayName>弥天之卷</DisplayName>
+		<Desc>[NAME]来到南屏村寻找灵宝。</Desc>
+		<Selections>
+			<li>
+				<Display>寻找灵宝</Display> 
+				<OKResult>;me:DropAwardItem("Item_YunYuZhiJuan",1);story:FinishSecret();</OKResult>
+			</li>
+		</Selections>
+	</Story>
+
+</List></Stories>
