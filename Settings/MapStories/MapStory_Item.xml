@@ -1,4 +1,4 @@
-﻿<Stories><List>	
+<Stories><List>	
 
 	<Story Name="Story_Item_YunYuZhiJuan" Parent="BaseFillingStory">
 		<DisplayName>弥天云雨之卷章</DisplayName>
@@ -10,10 +10,10 @@
 				<OKResult>me:TriggerStory("Story_Item_YunYuZhiJuan1");</OKResult>
 			</li>
 			<li>
-				<Display>四时之章</Display> 
-				<OKResult>me:TriggerStory("Story_Item_YunYuZhiJuan2");</OKResult>
-			</li>
-			<li>
+				--<Display>四季之章</Display> --
+				--<OKResult>me:TriggerStory("Story_Item_YunYuZhiJuan2");</OKResult>--
+			--</li>--
+			--<li>--
 				<Display>天象之章</Display> 
 				<OKResult>me:TriggerStory("Story_Item_YunYuZhiJuan3");</OKResult>
 			</li>
@@ -67,8 +67,8 @@
 		</Selections>
 	</Story>
 	
-	<Story Name="Story_Item_YunYuZhiJuan2" Parent="BaseFillingStory">
-		<DisplayName>四时之章</DisplayName>
+	--<Story Name="Story_Item_YunYuZhiJuan2" Parent="BaseFillingStory">
+		<DisplayName>四季之章</DisplayName>
 		<Desc>需要将季节调整到什么时候呢。</Desc>
 		<Kind>None</Kind>		
 		<Selections>
@@ -93,7 +93,7 @@
 				<OKResult>me:TriggerStory("Story_Item_YunYuZhiJuan");</OKResult>
 			</li>
 		</Selections>
-	</Story>	
+	</Story>	--
 	
 	<Story Name="Story_Item_YunYuZhiJuan3" Parent="BaseFillingStory">
 		<DisplayName>天象之章</DisplayName>
