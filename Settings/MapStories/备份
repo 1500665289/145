@@ -1,0 +1,230 @@
+<Stories><List>	
+
+	<Story Name="Story_Item_YunYuZhiJuan" Parent="BaseFillingStory">
+		<DisplayName>弥天云雨之卷章</DisplayName>
+		<Desc>此物与天道交感，在合适的季节可以用此宝物改变天象条件。乃是开天辟地时诞生的诸多先天灵宝之一。</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>晨昏之章</Display> 
+				<OKResult>me:TriggerStory("Story_Item_YunYuZhiJuan1");</OKResult>
+			</li>
+			<li>
+				--<Display>四季之章</Display>
+				--<OKResult>me:TriggerStory("Story_Item_YunYuZhiJuan2");</OKResult>
+			--</li>
+			--<li>
+				<Display>天象之章</Display> 
+				<OKResult>me:TriggerStory("Story_Item_YunYuZhiJuan3");</OKResult>
+			</li>
+			<li>
+				<Display>仙灵之章</Display> 
+				<OKResult>me:TriggerStory("Story_Item_YunYuZhiJuan4");</OKResult>
+			</li>
+			<li>
+				<Display>五炁之章</Display> 
+				<OKResult>me:TriggerStory("Story_Item_YunYuZhiJuan5");</OKResult>
+			</li>
+			<li>
+				<Display>演化之章</Display> 
+				<OKResult>me:TriggerStory("Story_Item_YunYuZhiJuan6");</OKResult>
+			</li>
+			<li>
+				<Display>静谧之章</Display>
+				<OKResult>World.Weather:ClearAllWeather();me:AddMsg("[NAME]使用灵宝清除所有天气");</OKResult>
+			</li>
+			<li>
+				<Display>放弃</Display>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="Story_Item_YunYuZhiJuan1" Parent="BaseFillingStory">
+		<DisplayName>晨昏之章</DisplayName>
+		<Desc>需要将时间调整到什么时候呢。</Desc>
+		<Kind>None</Kind>		
+		<Selections>
+			<li>
+				<Display>早上</Display>
+				<OKResult> GameMain:GetMod("BuildModeHelper"):ChangeTime(5)</OKResult>
+			</li>
+			<li>
+				<Display>正午</Display>
+				<OKResult> GameMain:GetMod("BuildModeHelper"):ChangeTime(11)</OKResult>
+			</li>
+			<li>
+				<Display>黄昏</Display>
+				<OKResult> GameMain:GetMod("BuildModeHelper"):ChangeTime(17)</OKResult>
+			</li>
+			<li>
+				<Display>深夜</Display>
+				<OKResult> GameMain:GetMod("BuildModeHelper"):ChangeTime(1)</OKResult>
+			</li>
+			<li>
+				<Display>重新选择</Display>
+				<OKResult>me:TriggerStory("Story_Item_YunYuZhiJuan");</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	--［[<Story Name="Story_Item_YunYuZhiJuan2" Parent="BaseFillingStory">
+		<DisplayName>四季之章</DisplayName>
+		<Desc>需要将季节调整到什么时候呢。</Desc>
+		<Kind>None</Kind>		
+		<Selections>
+			<li>
+				<Display>春</Display>
+				<OKResult> GameMain:GetMod("BuildModeHelper"):ChangeDay(14)</OKResult>
+			</li>
+			<li>
+				<Display>夏</Display>
+				<OKResult> GameMain:GetMod("BuildModeHelper"):ChangeDay(42)</OKResult>
+			</li>
+			<li>
+				<Display>秋</Display>
+				<OKResult>GameMain:GetMod("BuildModeHelper"):ChangeDay(75)</OKResult>
+			</li>
+			<li>
+				<Display>冬</Display>
+				<OKResult>GameMain:GetMod("BuildModeHelper"):ChangeDay(98)</OKResult>
+			</li>
+			<li>
+				<Display>重新选择</Display>
+				<OKResult>me:TriggerStory("Story_Item_YunYuZhiJuan");</OKResult>
+			</li>
+		</Selections>
+	</Story>]］
+	
+	<Story Name="Story_Item_YunYuZhiJuan3" Parent="BaseFillingStory">
+		<DisplayName>天象之章</DisplayName>
+		<Desc>需要将天气改变成什么呢。</Desc>
+		<Kind>None</Kind>		
+		<Selections>
+			<li>
+				<Display>小雨/雪</Display>
+				<OKResult> GameMain:GetMod("BuildModeHelper"):ChangeWeather("LightRain")</OKResult>
+			</li>
+			<li>
+				<Display>大雨/雪</Display>
+				<OKResult> GameMain:GetMod("BuildModeHelper"):ChangeWeather("HeavyRain")</OKResult>
+			</li>					
+			<li>
+				<Display>晴天</Display>
+				<OKResult>GameMain:GetMod("BuildModeHelper"):ChangeWeather("SunnyDay")</OKResult>
+			</li>
+			<li>
+				<Display>阴天</Display>
+				<OKResult>GameMain:GetMod("BuildModeHelper"):ChangeWeather("Overcast")</OKResult>
+			</li>
+			<li>
+				<Display>大雾</Display>
+				<OKResult>GameMain:GetMod("BuildModeHelper"):ChangeWeather("DenseFog")</OKResult>
+			</li>		
+			<li>
+				<Display>梅雨</Display>
+				<OKResult>GameMain:GetMod("BuildModeHelper"):ChangeWeather("MouldRains")</OKResult>
+			</li>
+			<li>
+				<Display>干旱</Display>
+				<OKResult>GameMain:GetMod("BuildModeHelper"):ChangeWeather("Drought")</OKResult>
+			</li>
+			<li>
+				<Display>重新选择</Display>
+				<OKResult>me:TriggerStory("Story_Item_YunYuZhiJuan");</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="Story_Item_YunYuZhiJuan4" Parent="BaseFillingStory">
+		<DisplayName>仙灵之章</DisplayName>
+		<Desc>需要将天气改变成什么呢。</Desc>
+		<Kind>None</Kind>		
+		<Selections>
+			<li>
+				<Display>永夜降临</Display>
+				<OKResult> GameMain:GetMod("BuildModeHelper"):ChangeWeather("PermanentNight")</OKResult>
+			</li>			
+			<li>
+				<Display>灵气爆发</Display>
+				<OKResult>GameMain:GetMod("BuildModeHelper"):ChangeWeather("LingUpWave")</OKResult>
+			</li>
+			<li>
+				<Display>灵气枯潮</Display>
+				<OKResult>GameMain:GetMod("BuildModeHelper"):ChangeWeather("LingRarefiedWave")</OKResult>
+			</li>
+			<li>
+				<Display>仙界气息</Display>
+				<OKResult>GameMain:GetMod("BuildModeHelper"):ChangeWeather("ZuShiBiHu")</OKResult>
+			</li>		
+			<li>
+				<Display>重新选择</Display>
+				<OKResult>me:TriggerStory("Story_Item_YunYuZhiJuan");</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="Story_Item_YunYuZhiJuan5" Parent="BaseFillingStory">
+		<DisplayName>五炁之章</DisplayName>
+		<Desc>需要将天气改变成什么呢。</Desc>
+		<Kind>None</Kind>		
+		<Selections>
+			<li>
+				<Display>暴雨</Display>
+				<OKResult> GameMain:GetMod("BuildModeHelper"):ChangeWeather("Rainstorm")</OKResult>
+			</li>
+			<li>
+				<Display>焚风</Display>
+				<OKResult> GameMain:GetMod("BuildModeHelper"):ChangeWeather("Fohn")</OKResult>
+			</li>
+			<li>
+				<Display>尘暴</Display>
+				<OKResult> GameMain:GetMod("BuildModeHelper"):ChangeWeather("DustStorm")</OKResult>
+			</li>
+			<li>
+				<Display>瘴气</Display>
+				<OKResult> GameMain:GetMod("BuildModeHelper"):ChangeWeather("Miasma")</OKResult>
+			</li>
+			<li>
+				<Display>雷暴</Display>
+				<OKResult> GameMain:GetMod("BuildModeHelper"):ChangeWeather("LightningStorm")</OKResult>
+			</li>
+			<li>
+				<Display>重新选择</Display>
+				<OKResult>me:TriggerStory("Story_Item_YunYuZhiJuan");</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="Story_Item_YunYuZhiJuan6" Parent="BaseFillingStory">
+		<DisplayName>演化之章</DisplayName>
+		<Desc>需要将天气改变成什么呢。</Desc>
+		<Kind>None</Kind>		
+		<Selections>
+			<li>
+				<Display>愁绪弥漫</Display>
+				<OKResult> GameMain:GetMod("BuildModeHelper"):ChangeWeather("Melancholy")</OKResult>
+			</li>
+			<li>
+				<Display>春天气息</Display>
+				<OKResult> GameMain:GetMod("BuildModeHelper"):ChangeWeather("SpringAir")</OKResult>
+			</li>					
+			<li>
+				<Display>丰收气息</Display>
+				<OKResult>GameMain:GetMod("BuildModeHelper"):ChangeWeather("HarvestAir")</OKResult>
+			</li>
+			<li>
+				<Display>暧昧气息</Display>
+				<OKResult>GameMain:GetMod("BuildModeHelper"):ChangeWeather("Ambiguous")</OKResult>
+			</li>
+			<li>
+				<Display>浮躁之风</Display>
+				<OKResult>GameMain:GetMod("BuildModeHelper"):ChangeWeather("Impetuous")</OKResult>
+			</li>		
+			<li>
+				<Display>重新选择</Display>
+				<OKResult>me:TriggerStory("Story_Item_YunYuZhiJuan");</OKResult>
+			</li>
+		</Selections>
+	</Story>
+
+</List></Stories>
