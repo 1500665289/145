@@ -10,10 +10,6 @@
 				<OKResult>me:TriggerStory("Story_Item_YunYuZhiJuan1");</OKResult>
 			</li>
 			<li>
-				--<Display>四季之章</Display>
-				--<OKResult>me:TriggerStory("Story_Item_YunYuZhiJuan2");</OKResult>
-			--</li>
-			--<li>
 				<Display>天象之章</Display> 
 				<OKResult>me:TriggerStory("Story_Item_YunYuZhiJuan3");</OKResult>
 			</li>
@@ -66,35 +62,7 @@
 			</li>
 		</Selections>
 	</Story>
-	
-	--［[<Story Name="Story_Item_YunYuZhiJuan2" Parent="BaseFillingStory">
-		<DisplayName>四季之章</DisplayName>
-		<Desc>需要将季节调整到什么时候呢。</Desc>
-		<Kind>None</Kind>		
-		<Selections>
-			<li>
-				<Display>春</Display>
-				<OKResult> GameMain:GetMod("BuildModeHelper"):ChangeDay(14)</OKResult>
-			</li>
-			<li>
-				<Display>夏</Display>
-				<OKResult> GameMain:GetMod("BuildModeHelper"):ChangeDay(42)</OKResult>
-			</li>
-			<li>
-				<Display>秋</Display>
-				<OKResult>GameMain:GetMod("BuildModeHelper"):ChangeDay(75)</OKResult>
-			</li>
-			<li>
-				<Display>冬</Display>
-				<OKResult>GameMain:GetMod("BuildModeHelper"):ChangeDay(98)</OKResult>
-			</li>
-			<li>
-				<Display>重新选择</Display>
-				<OKResult>me:TriggerStory("Story_Item_YunYuZhiJuan");</OKResult>
-			</li>
-		</Selections>
-	</Story>]］
-	
+
 	<Story Name="Story_Item_YunYuZhiJuan3" Parent="BaseFillingStory">
 		<DisplayName>天象之章</DisplayName>
 		<Desc>需要将天气改变成什么呢。</Desc>
